@@ -1,0 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#wrap{
+  background-color: #f9fafb;
+  height: 1000px;
+  
+}
+.container{
+  max-width: 1080px;
+  margin: 0 auto;
+};
