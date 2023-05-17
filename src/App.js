@@ -1,7 +1,10 @@
 import './App.css';
 import Lectures from "./components/Lectures"
-import LecturesForm from "./components/NewLecture/Lectureform"
+import NewLecture from "./components/NewLecture/NewLecture"
 function App() {
+  const addExpenseFn = (data) => {
+    console.log("NewExpense",data);
+  }
   const  Lecture = [
     {id:"e1",number:"1",title:"리액트 교과서: 기본기에 충실한 리액트 입문서!",amount:"14000"},
     {id:"e2",number:"2",title:"혼자 공부하는 자바스크립트",amount:"18000"},
@@ -12,7 +15,7 @@ function App() {
   ]
   return (
     <>
-      <LecturesForm />
+      <NewLecture onAddExpense={addExpenseFn}  />
       <Lectures itmes={Lecture} />
     </>
   );
